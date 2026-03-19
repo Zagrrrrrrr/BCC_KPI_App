@@ -1,0 +1,89 @@
+﻿<Window x:Class="BCC_KPI_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModels="clr-namespace:BCC_KPI_App.ViewModels"
+        Title="BCC KPI" 
+        Height="700" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        Background="#F0F2F5">
+
+    <Window.DataContext>
+        <viewModels:MainViewModel />
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Левое меню -->
+        <Border Grid.Column="0" Background="#2C3E50">
+            <StackPanel Margin="15">
+                <TextBlock Text="BCC KPI" 
+                           FontSize="28" 
+                           FontWeight="Bold" 
+                           Foreground="White"
+                           HorizontalAlignment="Center"
+                           Margin="0,20,0,30"/>
+
+                <Button Content="📊 ДАШБОРД" 
+                        Command="{Binding ShowDashboardCommand}"
+                        Height="45"
+                        Margin="5"
+                        Background="Transparent"
+                        Foreground="White"
+                        BorderThickness="0"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"
+                        Cursor="Hand">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button Content="📋 ОТЧЕТЫ" 
+                        Command="{Binding ShowReportsCommand}"
+                        Height="45"
+                        Margin="5"
+                        Background="Transparent"
+                        Foreground="White"
+                        BorderThickness="0"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"
+                        Cursor="Hand"/>
+
+                <Button Content="⚙ АДМИНИСТРИРОВАНИЕ" 
+                        Command="{Binding ShowAdminCommand}"
+                        Height="45"
+                        Margin="5"
+                        Background="Transparent"
+                        Foreground="White"
+                        BorderThickness="0"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"
+                        Cursor="Hand"/>
+
+                <Rectangle Height="1" Fill="#34495E" Margin="5,20"/>
+
+                <Button Content="🚪 ВЫХОД" 
+                        Click="Exit_Click"
+                        Height="45"
+                        Margin="5,20,5,5"
+                        Background="Transparent"
+                        Foreground="White"
+                        BorderThickness="0"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"
+                        Cursor="Hand"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Контент - используем ContentControl вместо Frame -->
+        <ContentControl Grid.Column="1" 
+                        Content="{Binding CurrentPage}"
+                        Margin="20"/>
+    </Grid>
+</Window>
