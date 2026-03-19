@@ -12,39 +12,80 @@
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Управление подразделениями" 
-                   FontSize="28" 
-                   FontWeight="Bold"
+        <TextBlock Grid.Row="0" 
+                   Text="⚙ Управление подразделениями" 
+                   FontSize="32" 
+                   FontWeight="Bold" 
                    Foreground="#2C3E50"
                    Margin="0,0,0,20"/>
 
-        <DataGrid Grid.Row="1" 
+        <Border Grid.Row="1" 
+                Background="White" 
+                CornerRadius="10" 
+                Padding="15" 
+                Margin="0,0,0,20"
+                BorderBrush="#BDC3C7"
+                BorderThickness="1">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="0" 
+                         Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                         Padding="10"
+                         BorderBrush="#BDC3C7"
+                         BorderThickness="1"/>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <Button Content="🔍 Поиск" 
+                            Command="{Binding SearchCommand}"
+                            Background="#3498DB"
+                            Foreground="White"
+                            Padding="15,10"
+                            Margin="5,0"
+                            Cursor="Hand"/>
+
+                    <Button Content="➕ Добавить" 
+                            Command="{Binding AddUnitCommand}"
+                            Background="#2ECC71"
+                            Foreground="White"
+                            Padding="15,10"
+                            Margin="5,0"
+                            Cursor="Hand"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <ListView Grid.Row="2" 
                   ItemsSource="{Binding Units}"
                   SelectedItem="{Binding SelectedUnit}"
-                  AutoGenerateColumns="False"
-                  IsReadOnly="True"
                   Background="White"
-                  BorderThickness="0"
-                  RowHeight="40"
-                  FontSize="14">
+                  BorderThickness="1"
+                  BorderBrush="#BDC3C7">
 
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Название" 
-                                    Binding="{Binding UnitName}" 
-                                    Width="*"/>
-                <DataGridTextColumn Header="Тип" 
-                                    Binding="{Binding UnitType}" 
-                                    Width="100"/>
-                <DataGridTextColumn Header="Статус" 
-                                    Binding="{Binding Status}" 
-                                    Width="100"/>
-                <DataGridTextColumn Header="Город" 
-                                    Binding="{Binding City}" 
-                                    Width="150"/>
-            </DataGrid.Columns>
-        </DataGrid>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Название" 
+                                    Width="250" 
+                                    DisplayMemberBinding="{Binding UnitName}"/>
+                    <GridViewColumn Header="Тип" 
+                                    Width="150" 
+                                    DisplayMemberBinding="{Binding UnitType}"/>
+                    <GridViewColumn Header="Статус" 
+                                    Width="150" 
+                                    DisplayMemberBinding="{Binding Status}"/>
+                    <GridViewColumn Header="Город" 
+                                    Width="200" 
+                                    DisplayMemberBinding="{Binding City}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>

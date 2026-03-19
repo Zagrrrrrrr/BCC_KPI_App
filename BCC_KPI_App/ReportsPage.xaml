@@ -16,41 +16,88 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Отчеты по продажам" 
-                   FontSize="28" 
-                   FontWeight="Bold"
+        <TextBlock Grid.Row="0" 
+                   Text="📋 Отчеты" 
+                   FontSize="32" 
+                   FontWeight="Bold" 
                    Foreground="#2C3E50"
                    Margin="0,0,0,20"/>
 
         <!-- Фильтры -->
         <Border Grid.Row="1" 
                 Background="White" 
-                CornerRadius="8" 
+                CornerRadius="10" 
                 Padding="15" 
                 Margin="0,0,0,20"
-                Effect="{StaticResource ShadowEffect}">
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Период:" VerticalAlignment="Center" Margin="10,0"/>
-                <DatePicker SelectedDate="{Binding StartDate}" Margin="5" Width="150"/>
-                <TextBlock Text="-" VerticalAlignment="Center" Margin="5"/>
-                <DatePicker SelectedDate="{Binding EndDate}" Margin="5" Width="150"/>
-                <Button Content="Сформировать" 
+                BorderBrush="#BDC3C7"
+                BorderThickness="1">
+
+            <WrapPanel>
+                <TextBlock Text="Период:" 
+                          VerticalAlignment="Center"
+                          Margin="10,0"/>
+
+                <DatePicker SelectedDate="{Binding StartDate}" 
+                           Width="150" 
+                           Margin="5"/>
+
+                <TextBlock Text="—" 
+                          VerticalAlignment="Center"
+                          Margin="5"/>
+
+                <DatePicker SelectedDate="{Binding EndDate}" 
+                           Width="150" 
+                           Margin="5"/>
+
+                <Button Content="📊 Сформировать" 
                         Command="{Binding GenerateReportCommand}"
                         Background="#3498DB"
                         Foreground="White"
                         Padding="15,8"
-                        Margin="20,0,0,0"
+                        Margin="20,0"
                         Cursor="Hand"/>
-            </StackPanel>
+
+                <Button Content="📥 Excel" 
+                        Command="{Binding ExportToExcelCommand}"
+                        Background="#27AE60"
+                        Foreground="White"
+                        Padding="15,8"
+                        Margin="5,0"
+                        Cursor="Hand"/>
+
+                <Button Content="📥 PDF" 
+                        Command="{Binding ExportToPdfCommand}"
+                        Background="#E74C3C"
+                        Foreground="White"
+                        Padding="15,8"
+                        Margin="5,0"
+                        Cursor="Hand"/>
+            </WrapPanel>
         </Border>
 
         <!-- Таблица с отчетом -->
-        <DataGrid Grid.Row="2" 
+        <ListView Grid.Row="2" 
                   ItemsSource="{Binding ReportData}"
-                  AutoGenerateColumns="True"
                   Background="White"
-                  BorderThickness="0"
-                  RowHeight="40"
-                  FontSize="14"/>
+                  BorderThickness="1"
+                  BorderBrush="#BDC3C7">
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Подразделение" 
+                                    Width="200" 
+                                    DisplayMemberBinding="{Binding Подразделение}"/>
+                    <GridViewColumn Header="План" 
+                                    Width="150" 
+                                    DisplayMemberBinding="{Binding План, StringFormat=N0}"/>
+                    <GridViewColumn Header="Факт" 
+                                    Width="150" 
+                                    DisplayMemberBinding="{Binding Факт, StringFormat=N0}"/>
+                    <GridViewColumn Header="Выполнение" 
+                                    Width="150" 
+                                    DisplayMemberBinding="{Binding Выполнение}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>

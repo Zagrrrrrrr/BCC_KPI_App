@@ -17,5 +17,7 @@ namespace BCC_KPI_App.Models
                 return 0;
             }
         }
+
+        public decimal Deviation => ActualValue - TargetValue;
     }
 }

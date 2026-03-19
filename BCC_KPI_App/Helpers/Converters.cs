@@ -1,78 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Windows.Data;
 using System.Windows.Media;
-using LiveCharts;
-using BCC_KPI_App.Models;
 
 namespace BCC_KPI_App.Helpers
 {
-    public class UnitNamesConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            if (value is List<ChartData> data && data != null)
-            {
-                return data.Select(d => d.UnitName).ToArray();
-            }
-            return new string[0];
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class TargetValuesConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            if (value is List<ChartData> data && data != null)
-            {
-                return new ChartValues<decimal>(data.Select(d => d.TargetValue));
-            }
-            return new ChartValues<decimal>();
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class ActualValuesConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            if (value is List<ChartData> data && data != null)
-            {
-                return new ChartValues<decimal>(data.Select(d => d.ActualValue));
-            }
-            return new ChartValues<decimal>();
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class ProgressColorConverter : IValueConverter
+    public class PercentToColorConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value is decimal percentage)
             {
                 if (percentage >= 100)
-                    return new SolidColorBrush(Color.FromRgb(39, 174, 96));
+                    return new SolidColorBrush(Color.FromRgb(46, 204, 113));
                 if (percentage >= 70)
-                    return new SolidColorBrush(Color.FromRgb(243, 156, 18));
+                    return new SolidColorBrush(Color.FromRgb(241, 196, 15));
+                if (percentage >= 50)
+                    return new SolidColorBrush(Color.FromRgb(230, 126, 34));
                 return new SolidColorBrush(Color.FromRgb(231, 76, 60));
             }
-            return new SolidColorBrush(Color.FromRgb(127, 140, 141));
+            return new SolidColorBrush(Color.FromRgb(52, 73, 94));
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class DeviationToColorConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            if (value is decimal deviation)
+            {
+                if (deviation >= 0)
+                    return new SolidColorBrush(Color.FromRgb(46, 204, 113));
+                return new SolidColorBrush(Color.FromRgb(231, 76, 60));
+            }
+            return new SolidColorBrush(Color.FromRgb(52, 73, 94));
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
