@@ -7,9 +7,10 @@ namespace BCC_KPI_App.Models
     {
         [Key]
         public int UnitId { get; set; }
+
+        [Required]
         public string UnitName { get; set; }
-        public string UnitType { get; set; }
-        public string Status { get; set; }
+
         public string City { get; set; }
 
         public virtual ICollection<KpiTarget> KpiTargets { get; set; }
@@ -18,8 +19,6 @@ namespace BCC_KPI_App.Models
         public Unit()
         {
             UnitName = "";
-            UnitType = "";
-            Status = "";
             City = "";
             KpiTargets = new HashSet<KpiTarget>();
             KpiActuals = new HashSet<KpiActual>();

@@ -68,26 +68,17 @@ namespace BCC_KPI_App.ViewModels
 
         private void SearchUnits()
         {
-            try
+            if (string.IsNullOrWhiteSpace(SearchText))
             {
-                if (string.IsNullOrWhiteSpace(SearchText))
-                {
-                    LoadUnits();
-                }
-                else
-                {
-                    var filtered = _context.Units
-                        .Where(u => u.UnitName.Contains(SearchText)
-                                  || u.City.Contains(SearchText)
-                                  || u.UnitType.Contains(SearchText))
-                        .ToList();
-
-                    Units = new ObservableCollection<Unit>(filtered);
-                }
+                LoadUnits();
             }
-            catch (Exception ex)
+            else
             {
-                System.Windows.MessageBox.Show($"Ошибка поиска: {ex.Message}");
+                var filtered = _context.Units
+                    .Where(u => u.UnitName.Contains(SearchText)
+                              || u.City.Contains(SearchText))
+                    .ToList();
+                Units = new ObservableCollection<Unit>(filtered);
             }
         }
 

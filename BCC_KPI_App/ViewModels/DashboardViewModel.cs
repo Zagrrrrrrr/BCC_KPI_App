@@ -153,14 +153,7 @@ namespace BCC_KPI_App.ViewModels
             {
                 var data = new ObservableCollection<ChartData>();
 
-                var unitsQuery = _context.Units.AsQueryable();
-
-                if (SelectedUnit != null)
-                {
-                    unitsQuery = unitsQuery.Where(u => u.UnitId == SelectedUnit.UnitId);
-                }
-
-                foreach (var unit in unitsQuery.ToList())
+                foreach (var unit in _context.Units.ToList())
                 {
                     var target = _context.KpiTargets
                         .Where(t => t.UnitId == unit.UnitId
@@ -183,21 +176,11 @@ namespace BCC_KPI_App.ViewModels
                 }
 
                 ChartData = data;
-
-                // ЖЕСТКИЙ КОСТЫЛЬ - пересоздаем график
                 UpdateCharts();
             }
             catch (Exception ex)
             {
                 System.Windows.MessageBox.Show($"Ошибка загрузки данных: {ex.Message}");
-
-                ChartData = new ObservableCollection<ChartData>
-        {
-            new ChartData { UnitName = "Кричевцементношифер", TargetValue = 500000, ActualValue = 350000 },
-            new ChartData { UnitName = "ТД БЦК - Минск", TargetValue = 300000, ActualValue = 280000 },
-            new ChartData { UnitName = "Красносельскстройматериалы", TargetValue = 400000, ActualValue = 200000 }
-        };
-                UpdateCharts();
             }
         }
 

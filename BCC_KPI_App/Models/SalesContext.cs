@@ -5,14 +5,8 @@ namespace BCC_KPI_App.Models
 {
     public class SalesContext : DbContext
     {
-        // Жестко прописываем строку подключения прямо здесь
-        public SalesContext() : base(GetConnectionString())
+        public SalesContext() : base("name=SalesEfficiencyDB")
         {
-        }
-
-        private static string GetConnectionString()
-        {
-            return @"Server=ZAGR\SQLEXPRESS;Database=SalesEfficiency_DB;Trusted_Connection=True;TrustServerCertificate=True;";
         }
 
         public DbSet<Unit> Units { get; set; }
@@ -26,6 +20,10 @@ namespace BCC_KPI_App.Models
             modelBuilder.Entity<Unit>().ToTable("Units");
             modelBuilder.Entity<KpiTarget>().ToTable("KPI_Targets");
             modelBuilder.Entity<KpiActual>().ToTable("KPI_Actuals");
+
+            // Указываем только те поля, которые есть в модели
+            modelBuilder.Entity<Unit>().Ignore(u => u.KpiTargets);
+            modelBuilder.Entity<Unit>().Ignore(u => u.KpiActuals);
         }
     }
 }
