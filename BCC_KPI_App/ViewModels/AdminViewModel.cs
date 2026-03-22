@@ -1,9 +1,10 @@
-﻿using System;
+﻿using BCC_KPI_App.Helpers;
+using BCC_KPI_App.Models;
+using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows;
 using System.Windows.Input;
-using BCC_KPI_App.Models;
-using BCC_KPI_App.Helpers;
 
 namespace BCC_KPI_App.ViewModels
 {
@@ -89,13 +90,34 @@ namespace BCC_KPI_App.ViewModels
             {
                 try
                 {
-                    _context.Units.Add(dialog.Unit);
+                    var newUnit = dialog.Unit;
+
+                    // Получаем ID из справочников
+                    var unitType = _context.UnitTypes.FirstOrDefault(t => t.TypeName == newUnit.UnitType);
+                    var unitStatus = _context.UnitStatuses.FirstOrDefault(s => s.StatusName == newUnit.Status);
+                    var holding = _context.Holdings.FirstOrDefault();
+
+                    if (unitType == null || unitStatus == null || holding == null)
+                    {
+                        MessageBox.Show("Не найдены справочные данные! Добавьте типы, статусы и холдинг в БД.", "Ошибка",
+                            MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    newUnit.UnitTypeID = unitType.TypeID;
+                    newUnit.StatusID = unitStatus.StatusID;
+                    newUnit.HoldingID = holding.HoldingID;
+
+                    _context.Units.Add(newUnit);
                     _context.SaveChanges();
                     LoadUnits();
+                    MessageBox.Show("Подразделение добавлено!", "Успех",
+                        MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 catch (Exception ex)
                 {
-                    System.Windows.MessageBox.Show($"Ошибка добавления: {ex.Message}");
+                    MessageBox.Show($"Ошибка добавления: {ex.Message}\n{ex.InnerException?.Message}", "Ошибка",
+                        MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
@@ -109,12 +131,37 @@ namespace BCC_KPI_App.ViewModels
             {
                 try
                 {
-                    _context.SaveChanges();
-                    LoadUnits();
+                    // Получаем обновленные данные из диалога
+                    var updatedUnit = dialog.Unit;
+
+                    // Находим существующую запись в контексте
+                    var existingUnit = _context.Units.Find(unit.UnitId);
+                    if (existingUnit != null)
+                    {
+                        existingUnit.UnitName = updatedUnit.UnitName;
+                        existingUnit.City = updatedUnit.City;
+                        existingUnit.UnitType = updatedUnit.UnitType;
+                        existingUnit.Status = updatedUnit.Status;
+
+                        // Получаем ID из справочников
+                        var unitType = _context.UnitTypes.FirstOrDefault(t => t.TypeName == updatedUnit.UnitType);
+                        var unitStatus = _context.UnitStatuses.FirstOrDefault(s => s.StatusName == updatedUnit.Status);
+                        var holding = _context.Holdings.FirstOrDefault();
+
+                        if (unitType != null) existingUnit.UnitTypeID = unitType.TypeID;
+                        if (unitStatus != null) existingUnit.StatusID = unitStatus.StatusID;
+                        if (holding != null) existingUnit.HoldingID = holding.HoldingID;
+
+                        _context.SaveChanges();
+                        LoadUnits();
+                        MessageBox.Show("Подразделение обновлено!", "Успех",
+                            MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
                 }
                 catch (Exception ex)
                 {
-                    System.Windows.MessageBox.Show($"Ошибка обновления: {ex.Message}");
+                    MessageBox.Show($"Ошибка обновления: {ex.Message}\n{ex.InnerException?.Message}", "Ошибка",
+                        MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
@@ -123,23 +170,30 @@ namespace BCC_KPI_App.ViewModels
         {
             if (unit == null) return;
 
-            var result = System.Windows.MessageBox.Show(
+            var result = MessageBox.Show(
                 $"Удалить подразделение '{unit.UnitName}'?",
                 "Подтверждение",
-                System.Windows.MessageBoxButton.YesNo,
-                System.Windows.MessageBoxImage.Question);
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question);
 
-            if (result == System.Windows.MessageBoxResult.Yes)
+            if (result == MessageBoxResult.Yes)
             {
                 try
                 {
-                    _context.Units.Remove(unit);
-                    _context.SaveChanges();
-                    LoadUnits();
+                    var existingUnit = _context.Units.Find(unit.UnitId);
+                    if (existingUnit != null)
+                    {
+                        _context.Units.Remove(existingUnit);
+                        _context.SaveChanges();
+                        LoadUnits();
+                        MessageBox.Show("Подразделение удалено!", "Успех",
+                            MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
                 }
                 catch (Exception ex)
                 {
-                    System.Windows.MessageBox.Show($"Ошибка удаления: {ex.Message}");
+                    MessageBox.Show($"Ошибка удаления: {ex.Message}\n{ex.InnerException?.Message}", "Ошибка",
+                        MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }

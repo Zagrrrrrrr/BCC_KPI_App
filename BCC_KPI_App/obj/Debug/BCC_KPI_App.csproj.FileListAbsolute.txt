@@ -52,7 +52,9 @@ C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\MainWindow.g.cs
 C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\ReportsPage.g.cs
 C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\UnitDialog.g.cs
 C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\App.g.cs
+C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\BCC_KPI_App_MarkupCompile.cache
+C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\BCC_KPI_App_MarkupCompile.lref
 C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\AdminPage.baml
 C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\DashboardPage.baml
 C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\ReportsPage.baml
@@ -63,5 +65,3 @@ C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\BCC_KPI_App.csproj.CoreCo
 C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\BCC_KPI_.141800F7.Up2Date
 C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\BCC_KPI_App.exe
 C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\BCC_KPI_App.pdb
-C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Курсач бд\BCC_KPI_App\BCC_KPI_App\obj\Debug\BCC_KPI_App_MarkupCompile.lref

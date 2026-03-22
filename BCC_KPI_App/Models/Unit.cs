@@ -12,6 +12,11 @@ namespace BCC_KPI_App.Models
         public string Status { get; set; }
         public string City { get; set; }
 
+        // Внешние ключи
+        public int UnitTypeID { get; set; }
+        public int StatusID { get; set; }
+        public int HoldingID { get; set; }
+
         public virtual ICollection<KpiTarget> KpiTargets { get; set; }
         public virtual ICollection<KpiActual> KpiActuals { get; set; }
 

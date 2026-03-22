@@ -179,6 +179,9 @@
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Holding.cs" />
+    <Compile Include="Models\UnitStatus.cs" />
+    <Compile Include="Models\UnitType.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserSession.cs" />
     <Compile Include="ReportsPage.xaml.cs">

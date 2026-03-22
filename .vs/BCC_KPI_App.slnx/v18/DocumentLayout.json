@@ -3,7 +3,39 @@
   "WorkspaceRootPath": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\unitdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\unitdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\unitdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\unitdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\models\\salescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\models\\salescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\models\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\models\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|c:\\\u043A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\bcc_kpi_app\\bcc_kpi_app\\models\\holding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\models\\holding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|c:\\\u043A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\bcc_kpi_app\\bcc_kpi_app\\models\\unitstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\models\\unitstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|c:\\\u043A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\bcc_kpi_app\\bcc_kpi_app\\models\\unittype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\models\\unittype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|c:\\\u043A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\bcc_kpi_app\\bcc_kpi_app\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|c:\\\u043A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\bcc_kpi_app\\bcc_kpi_app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -47,16 +79,8 @@
       "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\models\\salescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\models\\salescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\models\\kpitarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\models\\kpitarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\models\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\models\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -69,14 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\reportspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\reportspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\unitdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\unitdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,10 +146,6 @@
       "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\models\\chartdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\unitdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\unitdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\bcc_kpi_app\\helpers\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BEC3F1B-B03A-4EC9-888C-59828B58344F}|BCC_KPI_App\\BCC_KPI_App.csproj|solutionrelative:bcc_kpi_app\\helpers\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -145,7 +157,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -153,7 +165,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 5,
+              "Title": "Holding.cs",
+              "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\Holding.cs",
+              "RelativeDocumentMoniker": "BCC_KPI_App\\Models\\Holding.cs",
+              "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\Holding.cs",
+              "RelativeToolTip": "BCC_KPI_App\\Models\\Holding.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T19:39:55.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UnitStatus.cs",
+              "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\UnitStatus.cs",
+              "RelativeDocumentMoniker": "BCC_KPI_App\\Models\\UnitStatus.cs",
+              "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\UnitStatus.cs",
+              "RelativeToolTip": "BCC_KPI_App\\Models\\UnitStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T19:39:45.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnitType.cs",
+              "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\UnitType.cs",
+              "RelativeDocumentMoniker": "BCC_KPI_App\\Models\\UnitType.cs",
+              "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\UnitType.cs",
+              "RelativeToolTip": "BCC_KPI_App\\Models\\UnitType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T19:39:25.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Application.cs",
               "DocumentMoniker": "C:\\Users\\Zagrr\\AppData\\Local\\Temp\\.vsdbgsrc\\63221d184f9127cb576dfd32bc9d0b521a95a451dfba6cc4a0226a48f6aa429a\\Application.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\Zagrr\\AppData\\Local\\Temp\\.vsdbgsrc\\63221d184f9127cb576dfd32bc9d0b521a95a451dfba6cc4a0226a48f6aa429a\\Application.cs",
@@ -166,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "UserSession.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\UserSession.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\Models\\UserSession.cs",
@@ -178,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "packages.config",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\packages.config",
               "RelativeDocumentMoniker": "BCC_KPI_App\\packages.config",
@@ -186,12 +237,11 @@
               "RelativeToolTip": "BCC_KPI_App\\packages.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-03-22T18:16:24.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-22T18:16:24.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\App.xaml.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\App.xaml.cs",
@@ -199,12 +249,11 @@
               "RelativeToolTip": "BCC_KPI_App\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T18:01:54.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-22T18:01:54.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\User.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\Models\\User.cs",
@@ -216,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\LoginWindow.xaml.cs",
@@ -224,24 +273,22 @@
               "RelativeToolTip": "BCC_KPI_App\\LoginWindow.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAQwCoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T18:00:55.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-22T18:00:55.728Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "BCC_KPI_App\\LoginWindow.xaml",
               "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\LoginWindow.xaml",
               "RelativeToolTip": "BCC_KPI_App\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-22T18:00:31.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-22T18:00:31.623Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\packages\\EPPlus.6.2.10\\readme.txt",
               "RelativeDocumentMoniker": "packages\\EPPlus.6.2.10\\readme.txt",
@@ -253,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\packages\\EPPlus.8.5.0\\readme.txt",
               "RelativeDocumentMoniker": "packages\\EPPlus.8.5.0\\readme.txt",
@@ -265,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "ExcelExportService.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Services\\ExcelExportService.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\Services\\ExcelExportService.cs",
@@ -273,24 +320,24 @@
               "RelativeToolTip": "BCC_KPI_App\\Services\\ExcelExportService.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAuwG0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T17:07:26.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-22T17:07:26.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 0,
               "Title": "UnitDialog.xaml.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\UnitDialog.xaml.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\UnitDialog.xaml.cs",
               "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\UnitDialog.xaml.cs",
               "RelativeToolTip": "BCC_KPI_App\\UnitDialog.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwCEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAswFMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T20:09:22.936Z"
+              "WhenOpened": "2026-03-19T20:09:22.936Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 1,
               "Title": "UnitDialog.xaml",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\UnitDialog.xaml",
               "RelativeDocumentMoniker": "BCC_KPI_App\\UnitDialog.xaml",
@@ -302,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "Converters.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Helpers\\Converters.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\Helpers\\Converters.cs",
@@ -314,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\App.xaml",
               "RelativeDocumentMoniker": "BCC_KPI_App\\App.xaml",
@@ -326,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "ReportsPage.xaml.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\ReportsPage.xaml.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\ReportsPage.xaml.cs",
@@ -334,24 +381,22 @@
               "RelativeToolTip": "BCC_KPI_App\\ReportsPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T19:17:05.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:17:05.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "ReportsPage.xaml",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\ReportsPage.xaml",
               "RelativeDocumentMoniker": "BCC_KPI_App\\ReportsPage.xaml",
               "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\ReportsPage.xaml",
               "RelativeToolTip": "BCC_KPI_App\\ReportsPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-19T19:16:52.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:16:52.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "AdminPage.xaml.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\AdminPage.xaml.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\AdminPage.xaml.cs",
@@ -359,24 +404,22 @@
               "RelativeToolTip": "BCC_KPI_App\\AdminPage.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAwwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T19:16:39.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:16:39.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "AdminPage.xaml",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\AdminPage.xaml",
               "RelativeDocumentMoniker": "BCC_KPI_App\\AdminPage.xaml",
               "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\AdminPage.xaml",
               "RelativeToolTip": "BCC_KPI_App\\AdminPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-19T19:16:30.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:16:30.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "DashboardPage.xaml.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\DashboardPage.xaml.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\DashboardPage.xaml.cs",
@@ -384,24 +427,22 @@
               "RelativeToolTip": "BCC_KPI_App\\DashboardPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAUwAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T19:16:15.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:16:15.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "DashboardPage.xaml",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\DashboardPage.xaml",
               "RelativeDocumentMoniker": "BCC_KPI_App\\DashboardPage.xaml",
               "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\DashboardPage.xaml",
               "RelativeToolTip": "BCC_KPI_App\\DashboardPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-19T19:16:04.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:16:04.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "App.config",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\App.config",
               "RelativeDocumentMoniker": "BCC_KPI_App\\App.config",
@@ -413,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "ReportsViewModel.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\ViewModels\\ReportsViewModel.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\ViewModels\\ReportsViewModel.cs",
@@ -421,25 +462,24 @@
               "RelativeToolTip": "BCC_KPI_App\\ViewModels\\ReportsViewModel.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAAAewHkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T19:15:03.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:15:03.938Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 2,
               "Title": "AdminViewModel.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\ViewModels\\AdminViewModel.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\ViewModels\\AdminViewModel.cs",
               "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\ViewModels\\AdminViewModel.cs",
               "RelativeToolTip": "BCC_KPI_App\\ViewModels\\AdminViewModel.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAowJIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAALgAAAAAAAAAAAAswMgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T19:14:47.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "DashboardViewModel.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\ViewModels\\DashboardViewModel.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\ViewModels\\DashboardViewModel.cs",
@@ -452,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\ViewModels\\MainViewModel.cs",
@@ -464,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\ViewModels\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\ViewModels\\BaseViewModel.cs",
@@ -472,12 +512,11 @@
               "RelativeToolTip": "BCC_KPI_App\\ViewModels\\BaseViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T19:14:01.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:14:01.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Helpers\\RelayCommand.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\Helpers\\RelayCommand.cs",
@@ -489,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "ChartData.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\ChartData.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\Models\\ChartData.cs",
@@ -501,20 +540,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "SalesContext.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\SalesContext.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\Models\\SalesContext.cs",
               "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\SalesContext.cs",
               "RelativeToolTip": "BCC_KPI_App\\Models\\SalesContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T19:13:06.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "KpiActual.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\KpiActual.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\Models\\KpiActual.cs",
@@ -526,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "KpiTarget.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\KpiTarget.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\Models\\KpiTarget.cs",
@@ -534,37 +573,35 @@
               "RelativeToolTip": "BCC_KPI_App\\Models\\KpiTarget.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA2wBUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T19:12:36.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:12:36.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "Unit.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\Unit.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\Models\\Unit.cs",
               "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\Models\\Unit.cs",
               "RelativeToolTip": "BCC_KPI_App\\Models\\Unit.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA/wBsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwCAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T19:12:19.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\MainWindow.xaml",
               "RelativeDocumentMoniker": "BCC_KPI_App\\MainWindow.xaml",
               "ToolTip": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\MainWindow.xaml",
               "RelativeToolTip": "BCC_KPI_App\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-19T19:10:59.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:10:59.184Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\\u041A\u0443\u0440\u0441\u0430\u0447 \u0431\u0434\\BCC_KPI_App\\BCC_KPI_App\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "BCC_KPI_App\\MainWindow.xaml.cs",
@@ -572,8 +609,7 @@
               "RelativeToolTip": "BCC_KPI_App\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T19:10:58.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T19:10:58.057Z"
             }
           ]
         }

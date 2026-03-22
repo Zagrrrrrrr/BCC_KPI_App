@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Подразделение" 
-        Height="300" Width="400"
+        Height="420" Width="450"
         WindowStartupLocation="CenterOwner">
 
     <Grid Margin="20">
@@ -11,42 +11,36 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Text="Название:" Margin="0,5"/>
-        <TextBox Grid.Row="1" Text="{Binding Unit.UnitName}" Margin="0,5"/>
+        <TextBlock Grid.Row="0" Text="Название:" Margin="0,5" FontWeight="Bold"/>
+        <TextBox Grid.Row="1" x:Name="txtName" Margin="0,5" Height="30" Text="{Binding Unit.UnitName, UpdateSourceTrigger=PropertyChanged}"/>
 
-        <TextBlock Grid.Row="2" Text="Тип:" Margin="0,5"/>
-        <ComboBox Grid.Row="3" 
-                  SelectedItem="{Binding Unit.UnitType}"
-                  Margin="0,5">
+        <TextBlock Grid.Row="2" Text="Тип:" Margin="0,10,0,5" FontWeight="Bold"/>
+        <ComboBox Grid.Row="3" x:Name="cmbType" Margin="0,5" Height="30" SelectedIndex="0">
             <ComboBoxItem Content="Завод"/>
             <ComboBoxItem Content="Торговый дом"/>
         </ComboBox>
 
-        <TextBlock Grid.Row="4" Text="Город:" Margin="0,5"/>
-        <TextBox Grid.Row="5" Text="{Binding Unit.City}" Margin="0,5"/>
+        <TextBlock Grid.Row="4" Text="Статус:" Margin="0,10,0,5" FontWeight="Bold"/>
+        <ComboBox Grid.Row="5" x:Name="cmbStatus" Margin="0,5" Height="30" SelectedIndex="0">
+            <ComboBoxItem Content="Активен"/>
+            <ComboBoxItem Content="Реорганизация"/>
+            <ComboBoxItem Content="На консервации"/>
+        </ComboBox>
 
-        <StackPanel Grid.Row="6" 
-                    Orientation="Horizontal" 
-                    HorizontalAlignment="Right"
-                    Margin="0,20,0,0">
-            <Button Content="OK" 
-                    Click="Ok_Click"
-                    Background="#2ECC71"
-                    Foreground="White"
-                    Padding="20,10"
-                    Margin="5"
-                    Cursor="Hand"/>
-            <Button Content="Отмена" 
-                    Click="Cancel_Click"
-                    Background="#E74C3C"
-                    Foreground="White"
-                    Padding="20,10"
-                    Margin="5"
-                    Cursor="Hand"/>
+        <TextBlock Grid.Row="6" Text="Город:" Margin="0,10,0,5" FontWeight="Bold"/>
+        <TextBox Grid.Row="7" x:Name="txtCity" Margin="0,5" Height="30" Text="{Binding Unit.City, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <StackPanel Grid.Row="9" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="✅ Сохранить" Click="Ok_Click" Background="#2ECC71" Foreground="White" Padding="25,10" Margin="5" Cursor="Hand" FontWeight="Bold"/>
+            <Button Content="❌ Отмена" Click="Cancel_Click" Background="#E74C3C" Foreground="White" Padding="25,10" Margin="5" Cursor="Hand" FontWeight="Bold"/>
         </StackPanel>
     </Grid>
 </Window>
