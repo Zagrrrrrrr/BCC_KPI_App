@@ -179,12 +179,14 @@ namespace BCC_KPI_App.ViewModels
 
                 foreach (var unit in unitsQuery)
                 {
+                    // Планы за период — используем пересечение периодов
                     var target = _context.KpiTargets
                         .Where(t => t.UnitId == unit.UnitId
-                            && t.PeriodStart >= StartDate
-                            && t.PeriodEnd <= EndDate)
+                            && t.PeriodStart <= EndDate
+                            && t.PeriodEnd >= StartDate)
                         .Sum(t => (decimal?)t.TargetValue) ?? 0;
 
+                    // Факты за период
                     var actual = _context.KpiActuals
                         .Where(a => a.UnitId == unit.UnitId
                             && a.SaleDate >= StartDate
@@ -201,13 +203,23 @@ namespace BCC_KPI_App.ViewModels
 
                 ChartData = data;
                 UpdateCharts();
+
+                // Отладка
+                System.Diagnostics.Debug.WriteLine($"StartDate: {StartDate}, EndDate: {EndDate}");
+                System.Diagnostics.Debug.WriteLine($"Загружено подразделений: {data.Count}");
             }
             catch (Exception ex)
             {
                 System.Windows.MessageBox.Show($"Ошибка загрузки данных: {ex.Message}");
+
+                ChartData = new ObservableCollection<ChartData>
+        {
+            new ChartData { UnitName = "Кричевцементношифер", TargetValue = 5000000, ActualValue = 3500000 },
+            new ChartData { UnitName = "ТД БЦК - Минск", TargetValue = 3000000, ActualValue = 2800000 },
+            new ChartData { UnitName = "Красносельскстройматериалы", TargetValue = 4000000, ActualValue = 2000000 }
+        };
             }
         }
-
         private void LoadDynamicsData()
         {
             try
