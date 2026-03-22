@@ -23,7 +23,6 @@
                    Foreground="#2C3E50"
                    Margin="0,0,0,20"/>
 
-        <!-- Фильтры -->
         <Border Grid.Row="1" 
                 Background="White" 
                 CornerRadius="10" 
@@ -31,24 +30,11 @@
                 Margin="0,0,0,20"
                 BorderBrush="#BDC3C7"
                 BorderThickness="1">
-
             <WrapPanel>
-                <TextBlock Text="Период:" 
-                          VerticalAlignment="Center"
-                          Margin="10,0"/>
-
-                <DatePicker SelectedDate="{Binding StartDate}" 
-                           Width="150" 
-                           Margin="5"/>
-
-                <TextBlock Text="—" 
-                          VerticalAlignment="Center"
-                          Margin="5"/>
-
-                <DatePicker SelectedDate="{Binding EndDate}" 
-                           Width="150" 
-                           Margin="5"/>
-
+                <TextBlock Text="Период:" VerticalAlignment="Center" Margin="10,0"/>
+                <DatePicker SelectedDate="{Binding StartDate}" Width="150" Margin="5"/>
+                <TextBlock Text="—" VerticalAlignment="Center" Margin="5"/>
+                <DatePicker SelectedDate="{Binding EndDate}" Width="150" Margin="5"/>
                 <Button Content="📊 Сформировать" 
                         Command="{Binding GenerateReportCommand}"
                         Background="#3498DB"
@@ -56,7 +42,6 @@
                         Padding="15,8"
                         Margin="20,0"
                         Cursor="Hand"/>
-
                 <Button Content="📥 Excel" 
                         Command="{Binding ExportToExcelCommand}"
                         Background="#27AE60"
@@ -64,7 +49,6 @@
                         Padding="15,8"
                         Margin="5,0"
                         Cursor="Hand"/>
-
                 <Button Content="📥 PDF" 
                         Command="{Binding ExportToPdfCommand}"
                         Background="#E74C3C"
@@ -75,27 +59,17 @@
             </WrapPanel>
         </Border>
 
-        <!-- Таблица с отчетом -->
         <ListView Grid.Row="2" 
                   ItemsSource="{Binding ReportData}"
                   Background="White"
                   BorderThickness="1"
                   BorderBrush="#BDC3C7">
-
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Подразделение" 
-                                    Width="200" 
-                                    DisplayMemberBinding="{Binding Подразделение}"/>
-                    <GridViewColumn Header="План" 
-                                    Width="150" 
-                                    DisplayMemberBinding="{Binding План, StringFormat=N0}"/>
-                    <GridViewColumn Header="Факт" 
-                                    Width="150" 
-                                    DisplayMemberBinding="{Binding Факт, StringFormat=N0}"/>
-                    <GridViewColumn Header="Выполнение" 
-                                    Width="150" 
-                                    DisplayMemberBinding="{Binding Выполнение}"/>
+                    <GridViewColumn Header="Подразделение" Width="200" DisplayMemberBinding="{Binding Подразделение}"/>
+                    <GridViewColumn Header="План" Width="150" DisplayMemberBinding="{Binding План, StringFormat=N0}"/>
+                    <GridViewColumn Header="Факт" Width="150" DisplayMemberBinding="{Binding Факт, StringFormat=N0}"/>
+                    <GridViewColumn Header="Выполнение" Width="150" DisplayMemberBinding="{Binding Выполнение}"/>
                 </GridView>
             </ListView.View>
         </ListView>

@@ -30,19 +30,16 @@
                 Margin="0,0,0,20"
                 BorderBrush="#BDC3C7"
                 BorderThickness="1">
-
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-
                 <TextBox Grid.Column="0" 
                          Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
                          Padding="10"
                          BorderBrush="#BDC3C7"
                          BorderThickness="1"/>
-
                 <StackPanel Grid.Column="1" Orientation="Horizontal">
                     <Button Content="🔍 Поиск" 
                             Command="{Binding SearchCommand}"
@@ -51,7 +48,6 @@
                             Padding="15,10"
                             Margin="5,0"
                             Cursor="Hand"/>
-
                     <Button Content="➕ Добавить" 
                             Command="{Binding AddUnitCommand}"
                             Background="#2ECC71"
@@ -69,17 +65,36 @@
                   Background="White"
                   BorderThickness="1"
                   BorderBrush="#BDC3C7">
-
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Название" 
-                                    Width="250" 
-                                    DisplayMemberBinding="{Binding UnitName}"/>
-                    
-                    
-                    <GridViewColumn Header="Город" 
-                                    Width="200" 
-                                    DisplayMemberBinding="{Binding City}"/>
+                    <GridViewColumn Header="Название" Width="250" DisplayMemberBinding="{Binding UnitName}"/>
+                    <GridViewColumn Header="Тип" Width="150" DisplayMemberBinding="{Binding UnitType}"/>
+                    <GridViewColumn Header="Статус" Width="150" DisplayMemberBinding="{Binding Status}"/>
+                    <GridViewColumn Header="Город" Width="200" DisplayMemberBinding="{Binding City}"/>
+                    <GridViewColumn Header="Действия" Width="200">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="✏️" 
+                                            Command="{Binding DataContext.EditCommand, RelativeSource={RelativeSource AncestorType=Page}}"
+                                            CommandParameter="{Binding}"
+                                            Background="#F39C12"
+                                            Foreground="White"
+                                            Padding="10,5"
+                                            Margin="2"
+                                            Cursor="Hand"/>
+                                    <Button Content="🗑️" 
+                                            Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType=Page}}"
+                                            CommandParameter="{Binding}"
+                                            Background="#E74C3C"
+                                            Foreground="White"
+                                            Padding="10,5"
+                                            Margin="2"
+                                            Cursor="Hand"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>

@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Windows.Input;
+﻿using BCC_KPI_App.Helpers;
+using BCC_KPI_App.Models;
+using BCC_KPI_App.Services;
 using LiveCharts;
 using LiveCharts.Wpf;
-using BCC_KPI_App.Models;
-using BCC_KPI_App.Helpers;
+using System;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Windows;
+using System.Windows.Input;
+using System.Data;
 
 namespace BCC_KPI_App.ViewModels
 {
@@ -18,10 +21,14 @@ namespace BCC_KPI_App.ViewModels
         private DateTime _startDate;
         private DateTime _endDate;
         private SeriesCollection _comparisonSeries;
+        private SeriesCollection _dynamicsSeries;
         private string[] _unitNames;
+        private string[] _monthLabels;
         private Func<double, string> _formatter;
         private ObservableCollection<Unit> _units;
         private Unit _selectedUnit;
+        public FrameworkElement ChartComparison { get; set; }
+        public FrameworkElement ChartDynamics { get; set; }
 
         public DashboardViewModel()
         {
@@ -33,8 +40,9 @@ namespace BCC_KPI_App.ViewModels
 
             LoadUnits();
             LoadData();
+            LoadDynamicsData();
 
-            ApplyFilterCommand = new RelayCommand(p => LoadData());
+            ApplyFilterCommand = new RelayCommand(p => { LoadData(); LoadDynamicsData(); });
             CompareCommand = new RelayCommand(p => CompareWithPreviousPeriod());
             ExportCommand = new RelayCommand(p => ExportData());
         }
@@ -66,6 +74,7 @@ namespace BCC_KPI_App.ViewModels
                 _selectedUnit = value;
                 OnPropertyChanged(nameof(SelectedUnit));
                 LoadData();
+                LoadDynamicsData();
             }
         }
 
@@ -112,10 +121,22 @@ namespace BCC_KPI_App.ViewModels
             set { _comparisonSeries = value; OnPropertyChanged(nameof(ComparisonSeries)); }
         }
 
+        public SeriesCollection DynamicsSeries
+        {
+            get => _dynamicsSeries;
+            set { _dynamicsSeries = value; OnPropertyChanged(nameof(DynamicsSeries)); }
+        }
+
         public string[] UnitNames
         {
             get => _unitNames;
             set { _unitNames = value; OnPropertyChanged(nameof(UnitNames)); }
+        }
+
+        public string[] MonthLabels
+        {
+            get => _monthLabels;
+            set { _monthLabels = value; OnPropertyChanged(nameof(MonthLabels)); }
         }
 
         public Func<double, string> Formatter
@@ -152,8 +173,11 @@ namespace BCC_KPI_App.ViewModels
             try
             {
                 var data = new ObservableCollection<ChartData>();
+                var unitsQuery = SelectedUnit != null
+                    ? _context.Units.Where(u => u.UnitId == SelectedUnit.UnitId).ToList()
+                    : _context.Units.ToList();
 
-                foreach (var unit in _context.Units.ToList())
+                foreach (var unit in unitsQuery)
                 {
                     var target = _context.KpiTargets
                         .Where(t => t.UnitId == unit.UnitId
@@ -184,11 +208,48 @@ namespace BCC_KPI_App.ViewModels
             }
         }
 
+        private void LoadDynamicsData()
+        {
+            try
+            {
+                var months = new System.Collections.Generic.List<string>();
+                var actualValues = new System.Collections.Generic.List<decimal>();
+
+                // Последние 6 месяцев
+                for (int i = 5; i >= 0; i--)
+                {
+                    var month = DateTime.Now.AddMonths(-i);
+                    months.Add(month.ToString("MMM yyyy"));
+
+                    var actual = _context.KpiActuals
+                        .Where(a => a.SaleDate.Year == month.Year && a.SaleDate.Month == month.Month)
+                        .Sum(a => (decimal?)a.ActualValue) ?? 0;
+                    actualValues.Add(actual);
+                }
+
+                MonthLabels = months.ToArray();
+                DynamicsSeries = new SeriesCollection
+                {
+                    new LineSeries
+                    {
+                        Title = "Факт",
+                        Values = new ChartValues<decimal>(actualValues),
+                        PointGeometry = null,
+                        StrokeThickness = 3,
+                        Fill = System.Windows.Media.Brushes.Transparent
+                    }
+                };
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show($"Ошибка загрузки динамики: {ex.Message}");
+            }
+        }
+
         private void UpdateCharts()
         {
             try
             {
-                // Полностью убиваем старый график
                 ComparisonSeries = null;
                 UnitNames = null;
                 OnPropertyChanged(nameof(ComparisonSeries));
@@ -196,7 +257,6 @@ namespace BCC_KPI_App.ViewModels
 
                 if (ChartData != null && ChartData.Count > 0)
                 {
-                    // Создаем новый график
                     var newSeries = new SeriesCollection();
 
                     newSeries.Add(new ColumnSeries
@@ -218,7 +278,6 @@ namespace BCC_KPI_App.ViewModels
                     Formatter = value => value.ToString("N0");
                 }
 
-                // Двойной вызов для верности
                 OnPropertyChanged(nameof(ComparisonSeries));
                 OnPropertyChanged(nameof(UnitNames));
             }
@@ -236,7 +295,7 @@ namespace BCC_KPI_App.ViewModels
                 var previousStart = StartDate.AddDays(-daysDiff);
                 var previousEnd = StartDate.AddDays(-1);
 
-                var message = "Сравнение с предыдущим периодом:\n\n";
+                var message = "📊 Сравнение с предыдущим периодом:\n\n";
 
                 foreach (var current in ChartData)
                 {
@@ -254,7 +313,10 @@ namespace BCC_KPI_App.ViewModels
                             ? Math.Round((current.ActualValue / prevActual - 1) * 100, 2)
                             : 0;
 
-                        message += $"{current.UnitName}: {diff:N0} ({percent:+#;-#;0}%)\n";
+                        message += $"🏭 {current.UnitName}:\n";
+                        message += $"   Было: {prevActual:N0} руб.\n";
+                        message += $"   Стало: {current.ActualValue:N0} руб.\n";
+                        message += $"   Динамика: {diff:N0} руб. ({percent:+#;-#;0}%)\n\n";
                     }
                 }
 
@@ -268,7 +330,32 @@ namespace BCC_KPI_App.ViewModels
 
         private void ExportData()
         {
-            System.Windows.MessageBox.Show("Экспорт данных в разработке");
+            try
+            {
+                var dt = new DataTable("KPI_Report");
+                dt.Columns.Add("Подразделение", typeof(string));
+                dt.Columns.Add("План (руб)", typeof(decimal));
+                dt.Columns.Add("Факт (руб)", typeof(decimal));
+                dt.Columns.Add("Выполнение (%)", typeof(decimal));
+
+                foreach (var item in ChartData)
+                {
+                    dt.Rows.Add(item.UnitName, item.TargetValue, item.ActualValue, item.CompletionPercentage);
+                }
+
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Нет данных для экспорта.", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return;
+                }
+
+                Services.ExcelExportService.ExportToExcel(dt, $"KPI_Report_{DateTime.Now:yyyyMMdd}",
+                    ChartComparison, ChartDynamics, "Отчет по KPI холдинга БЦК");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка экспорта: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

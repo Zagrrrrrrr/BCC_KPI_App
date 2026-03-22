@@ -12,78 +12,19 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Левое меню (ПИЗДАТОЕ) -->
         <Border Grid.Column="0" Background="#2C3E50">
             <StackPanel Margin="20">
-                <Border Background="#34495E" 
-                        CornerRadius="10" 
-                        Padding="20" 
-                        Margin="0,0,0,30">
-                    <TextBlock Text="BCC KPI" 
-                               FontSize="28" 
-                               FontWeight="Bold" 
-                               Foreground="White"
-                               HorizontalAlignment="Center"/>
+                <Border Background="#34495E" CornerRadius="10" Padding="20" Margin="0,0,0,30">
+                    <TextBlock Text="BCC KPI" FontSize="28" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
                 </Border>
-
-                <Button Content="📊 ДАШБОРД" 
-                        Click="Dashboard_Click"
-                        Height="50"
-                        Margin="0,5"
-                        Background="Transparent"
-                        Foreground="White"
-                        BorderThickness="0"
-                        FontSize="16"
-                        Cursor="Hand"
-                        HorizontalContentAlignment="Left">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="8"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-
-                <Button Content="📋 ОТЧЕТЫ" 
-                        Click="Reports_Click"
-                        Height="50"
-                        Margin="0,5"
-                        Background="Transparent"
-                        Foreground="White"
-                        BorderThickness="0"
-                        FontSize="16"
-                        Cursor="Hand"
-                        HorizontalContentAlignment="Left"/>
-
-                <Button Content="⚙ АДМИНИСТРИРОВАНИЕ" 
-                        Click="Admin_Click"
-                        Height="50"
-                        Margin="0,5"
-                        Background="Transparent"
-                        Foreground="White"
-                        BorderThickness="0"
-                        FontSize="16"
-                        Cursor="Hand"
-                        HorizontalContentAlignment="Left"/>
-
+                <Button Content="📊 ДАШБОРД" Click="Dashboard_Click" Height="50" Margin="0,5" Background="Transparent" Foreground="White" FontSize="16" HorizontalContentAlignment="Left"/>
+                <Button Content="📋 ОТЧЕТЫ" Click="Reports_Click" Height="50" Margin="0,5" Background="Transparent" Foreground="White" FontSize="16" HorizontalContentAlignment="Left"/>
+                <Button Content="⚙ АДМИНИСТРИРОВАНИЕ" Click="Admin_Click" Height="50" Margin="0,5" Background="Transparent" Foreground="White" FontSize="16" HorizontalContentAlignment="Left"/>
                 <Rectangle Height="1" Fill="#34495E" Margin="0,20"/>
-
-                <Button Content="🚪 ВЫХОД" 
-                        Click="Exit_Click"
-                        Height="50"
-                        Margin="0,20,0,5"
-                        Background="Transparent"
-                        Foreground="White"
-                        BorderThickness="0"
-                        FontSize="16"
-                        Cursor="Hand"
-                        HorizontalContentAlignment="Left"/>
+                <Button Content="🚪 ВЫХОД" Click="Exit_Click" Height="50" Margin="0,20,0,5" Background="Transparent" Foreground="White" FontSize="16" HorizontalContentAlignment="Left"/>
             </StackPanel>
         </Border>
 
-        <!-- Фрейм для страниц -->
-        <Frame x:Name="MainFrame" 
-               Grid.Column="1" 
-               NavigationUIVisibility="Hidden"
-               Margin="20"/>
+        <Frame x:Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden" Margin="20"/>
     </Grid>
 </Window>

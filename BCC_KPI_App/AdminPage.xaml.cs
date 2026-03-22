@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
+using BCC_KPI_App.Models;
 
 namespace BCC_KPI_App
 {
@@ -7,6 +9,8 @@ namespace BCC_KPI_App
         public AdminPage()
         {
             InitializeComponent();
+
+            
+            }
         }
     }
-}
